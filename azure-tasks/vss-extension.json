@@ -1,0 +1,74 @@
+{
+    "manifestVersion": 1,
+    "id": "awesome-azure-vsts-tasks",
+    "name": "Geek Learning Azure Tasks",
+    "version": "0.0.1",
+    "publisher": "geeklearning",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services.Cloud"
+        }
+    ],    
+    "description": "Awesome Azure additionnal tasks to help you build and publish your applications on Azure.",
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {
+        "default": "extension-icon.png"        
+    },
+    "tags": [
+        "Azure",
+        "publish",
+        "swap"
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        },
+        "license": {
+            "path": "LICENSE.md"
+        }
+    },
+    "links": {
+        "home": {
+            "uri": "http://geeklearning.io/"
+        },
+        "getstarted": {
+            "uri": "http://geeklearning.io/"
+        },
+        "learn": {
+            "uri": "http://geeklearning.io/"
+        },
+        "support": {
+            "uri": "http://geeklearning.io/"
+        },
+        "repository": {
+            "uri": "https://github.com/geeklearningio/awesome-vsts-tasks"
+        },
+        "issues": {
+            "uri": "https://github.com/geeklearningio/awesome-vsts-tasks/issues"
+        }
+    },
+    "branding": {
+        "color": "#008B8B",
+        "theme": "light"
+    },   
+    "files": [
+        {
+            "path": "SwapSlots"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "swap-slot-task",
+            "type": "ms.vss-distributed-task.task",
+            "description": "Swap two slots of an Azure Web App",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "SwapSlots"
+            }
+        }
+    ]
+}
