@@ -11,7 +11,7 @@ param
     $SourceSlot, 
 
     [String] [Parameter(Mandatory = $true)]
-    $DestinationSlot, 
+    $DestinationSlot
 )
 
 Write-Verbose "Entering script SwapSlots.ps1"

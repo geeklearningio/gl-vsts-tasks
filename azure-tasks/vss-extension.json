@@ -1,8 +1,8 @@
 {
     "manifestVersion": 1,
-    "id": "awesome-azure-vsts-tasks",
-    "name": "Geek Learning Azure Tasks",
-    "version": "0.0.1",
+    "id": "gl-vsts-tasks-azure",
+    "name": "Geek Learning VSTS Tasks for Azure",
+    "version": "0.0.3",
     "publisher": "geeklearning",
     "targets": [
         {
@@ -19,7 +19,9 @@
     "tags": [
         "Azure",
         "publish",
-        "swap"
+        "swap",
+        "start",
+        "stop"
     ],
     "content": {
         "details": {
@@ -56,6 +58,12 @@
     "files": [
         {
             "path": "SwapSlots"
+        },
+        {
+            "path": "StartWebApp"
+        },
+        {
+            "path": "StopWebApp"
         }
     ],
     "contributions": [
@@ -68,6 +76,28 @@
             ],
             "properties": {
                 "name": "SwapSlots"
+            }
+        },
+        {
+            "id": "start-webapp-task",
+            "type": "ms.vss-distributed-task.task",
+            "description": "Start an Azure Web App, or one of its slot",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "StartWebApp"
+            }
+        },
+        {
+            "id": "stop-webapp-task",
+            "type": "ms.vss-distributed-task.task",
+            "description": "Stop an Azure Web App, or one of its slot",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "StopWebApp"
             }
         }
     ]

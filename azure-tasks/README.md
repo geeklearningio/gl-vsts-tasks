@@ -1,3 +1,3 @@
-# awesome-vsts-tasks
+# gl-vsts-tasks
 
 Coming soon !

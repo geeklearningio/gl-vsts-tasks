@@ -1,8 +1,8 @@
 {
-    "id": "8698E535-D070-4A41-8C0E-4624D6283F05",
-    "name": "SwapSlots",
-    "friendlyName": "Azure Web App Swap Slots",
-    "description": "Swap two slots of an Azure Web App",
+    "id": "DF1611D6-6AEE-40B5-8AF6-143AF94D9F3E",
+    "name": "StartWebApp",
+    "friendlyName": "Start Azure Web App",
+    "description": "Start an Azure Web App, or one of its slot",
     "category": "Deploy",
     "visibility": [
         "Build",
@@ -12,13 +12,13 @@
     "version": {
         "Major": 0,
         "Minor": 0,
-        "Patch": 2
+        "Patch": 1
     },
     "demands": [
         "azureps"
     ],
     "minimumAgentVersion": "1.95.0",
-    "instanceNameFormat": "Swap slots of Web App: $(WebSiteName)",
+    "instanceNameFormat": "Start Web App: $(WebSiteName) $(Slot)",
     "inputs": [
         {
         "name": "ConnectedServiceName",
@@ -37,25 +37,17 @@
             "helpMarkDown": ""
         },        
         {
-            "name": "SourceSlot",
+            "name": "Slot",
             "type": "string",
-            "label": "Source Slot",
+            "label": "Slot",
             "defaultValue": "",
-            "required": true,
-            "helpMarkDown": ""
-        },
-        {
-            "name": "DestinationSlot",
-            "type": "string",
-            "label": "Destination Slot",
-            "defaultValue": "",
-            "required": true,
+            "required": false,
             "helpMarkDown": ""
         }
     ],
     "execution": {
         "AzurePowerShell": {
-            "target": "$(currentDirectory)\\SwapSlots.ps1",
+            "target": "$(currentDirectory)\\StartWebApp.ps1",
             "argumentFormat": "",
             "workingDirectory": "$(currentDirectory)"
         }
