@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "gl-vsts-tasks-azure",
     "name": "Geek Learning VSTS Tasks for Azure",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "geeklearning",
     "targets": [
         {
@@ -21,7 +21,9 @@
         "publish",
         "swap",
         "start",
-        "stop"
+        "stop",
+        "dotnetcore",
+        "slack"
     ],
     "content": {
         "details": {
@@ -64,7 +66,13 @@
         },
         {
             "path": "StopWebApp"
-        }
+        },
+        {
+            "path": "DotNetCorePublish"
+        },
+        {
+            "path": "PostReleaseToSlack"
+        }          
     ],
     "contributions": [
         {
@@ -98,6 +106,28 @@
             ],
             "properties": {
                 "name": "StopWebApp"
+            }
+        },
+        {
+            "id": "dotnet-core-publish-task",
+            "type": "ms.vss-distributed-task.task",
+            "description": "Deploy an ASP.NET Core application to an Azure Web App",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "DotNetCorePublish"
+            }
+        },
+        {
+            "id": "dotnet-core-publish-task",
+            "type": "ms.vss-distributed-task.task",
+            "description": "Post the new release of an Azure Web App to Slack",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "PostReleaseToSlack"
             }
         }
     ]
