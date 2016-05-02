@@ -1,0 +1,13 @@
+{
+  "name": "utility-tasks",
+  "version": false,
+  "dependencies": {},
+  "ambientDependencies": {
+    "fs-extra": "registry:dt/fs-extra#0.0.0+20160319124112",
+    "micromatch": "registry:dt/micromatch#2.3.7+20160123140905",
+    "minimatch": "registry:dt/minimatch#2.0.8+20160317120654",
+    "node": "registry:dt/node#4.0.0+20160501135006",
+    "parse-glob": "registry:dt/parse-glob#3.0.4+20160110125512",
+    "q": "registry:dt/q#0.0.0+20160417152954"
+  }
+}
