@@ -2,8 +2,8 @@
     "manifestVersion": 1,
     "id": "gl-vsts-tasks-azure",
     "name": "Geek Learning VSTS Tasks for Azure",
-    "version": "0.0.4",
-    "publisher": "geeklearning",
+    "version": "0.0.5",
+    "publisher": "geeklearningio",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services.Cloud"
@@ -120,7 +120,7 @@
             }
         },
         {
-            "id": "dotnet-core-publish-task",
+            "id": "post-release-to-slack-task",
             "type": "ms.vss-distributed-task.task",
             "description": "Post the new release of an Azure Web App to Slack",
             "targets": [
