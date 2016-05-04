@@ -1,0 +1,35 @@
+{
+    "id": "97F448FA-AEE1-41F0-BA0E-2259AD851AC3",
+    "name": "DnuInstaller",
+    "friendlyName": "DNU Installer",
+    "description": "Installs or restores missing packages using DNU",
+    "category": "Package",
+    "visibility": [
+        "Build"
+    ],
+    "author": "Geek Learning",
+    "version": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 5
+    },
+    "demands": [
+    ],
+    "minimumAgentVersion": "1.95.0",
+    "instanceNameFormat": "dnu restore",
+    "inputs": [  
+        {
+            "name": "BaseDirectory",
+            "type": "filePath",
+            "label": "Root directory",
+            "defaultValue": "",
+            "helpMarkDown": "Root discovery folder. Leave empty for the repository root.",
+            "required":false
+        }              
+    ],
+    "execution": {
+        "PowerShell3": {
+            "target": "DnuInstaller.ps1"
+        }
+    }
+}
