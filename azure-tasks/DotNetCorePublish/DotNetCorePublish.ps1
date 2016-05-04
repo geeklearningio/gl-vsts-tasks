@@ -33,7 +33,7 @@ else
 }
 
 # get the scm url to use with MSDeploy.  By default this will be the second in the array
-$msdeployurl = $website.EnabledHostNames[1]
+$msdeployurl = $website.EnabledHostNames | Where-Object { $_ -like '*.scm*azurewebsites.net*' } | Select-Object -First 1
 
 $publishProperties = @{
 	'WebPublishMethod'='MSDeploy';

@@ -1,5 +1,5 @@
 {
-    "id": "97F448FA-AEE1-41F0-BA0E-2259AD851AC3",
+    "id": "5FDD1845-8BA7-49EA-9E83-2A5881B4F858",
     "name": "DotNetCorePublish",
     "friendlyName": "Publish ASP.NET Core Web App",
     "description": "Deploy an ASP.NET Core application to an Azure Web App",
@@ -12,7 +12,7 @@
     "version": {
         "Major": 0,
         "Minor": 0,
-        "Patch": 1
+        "Patch": 3
     },
     "demands": [
         "azureps"

@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "gl-vsts-tasks-azure",
     "name": "Geek Learning VSTS Tasks for Azure",
-    "version": "0.0.12",
+    "version": "0.0.14",
     "publisher": "geeklearningio",
     "targets": [
         {
