@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "gl-vsts-tasks-utility",
     "name": "Utility Tasks",
-    "version": "0.0.27",
+    "version": "0.0.35",
     "publisher": "geeklearningio",
     "targets": [
         {
