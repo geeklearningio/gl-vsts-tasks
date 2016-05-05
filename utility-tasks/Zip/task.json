@@ -1,25 +1,25 @@
 {
-    "id": "3ED80D67-684C-4F5B-9173-6F369B82136E",
+    "id": "2BD10ECC-0B4D-4C9D-8833-9E55F436CB83",
     "name": "Zip",
     "friendlyName": "Zip",
     "description": "Zips files from directories using minimatch filtering",
-    "category": "Other",
+    "category": "Build and Release",
     "visibility": [
-        "Utility",
-        "Package"
+        "Build",
+        "Release"
     ],
     "author": "Geek Learning",
     "version": {
         "Major": 0,
         "Minor": 0,
-        "Patch": 1
+        "Patch": 27
     },
     "demands": [
         "npm"
     ],
     "minimumAgentVersion": "1.95.0",
     "instanceNameFormat": "Zips files from directory $(ZipRoot)",
-     "inputs": [
+    "inputs": [
         {
             "name": "ZipRoot",
             "type": "filePath",

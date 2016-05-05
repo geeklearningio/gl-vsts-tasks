@@ -205,3 +205,10 @@ ModelManifest.xml
 
 /**/typings/**/*.*
 /**/*.js
+
+#outputs
+*.vsix
+
+#node_modules
+
+**/node_modules/**/*.*

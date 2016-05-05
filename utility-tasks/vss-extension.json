@@ -1,27 +1,25 @@
 {
     "manifestVersion": 1,
-    "id": "gl-vsts-tasks-azure",
-    "name": "Geek Learning VSTS Tasks for Azure",
-    "version": "0.0.3",
-    "publisher": "geeklearning",
+    "id": "gl-vsts-tasks-utility",
+    "name": "Utility Tasks",
+    "version": "0.0.27",
+    "publisher": "geeklearningio",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services.Cloud"
         }
-    ],    
-    "description": "Awesome Azure additionnal tasks to help you build and publish your applications on Azure.",
+    ],
+    "description": "Awesome additionnal utility tasks.",
     "categories": [
         "Build and release"
     ],
     "icons": {
-        "default": "extension-icon.png"        
+        "default": "extension-icon.png"
     },
     "tags": [
-        "Azure",
-        "publish",
-        "swap",
-        "start",
-        "stop"
+        "utility",
+        "zip",
+        "json"
     ],
     "content": {
         "details": {
@@ -54,50 +52,36 @@
     "branding": {
         "color": "#008B8B",
         "theme": "light"
-    },   
+    },
     "files": [
         {
-            "path": "SwapSlots"
+            "path": "Zip"
         },
         {
-            "path": "StartWebApp"
-        },
-        {
-            "path": "StopWebApp"
+            "path": "JsonPatch"
         }
     ],
     "contributions": [
         {
-            "id": "swap-slot-task",
+            "id": "zip-task",
             "type": "ms.vss-distributed-task.task",
-            "description": "Swap two slots of an Azure Web App",
+            "description": "Zips files",
             "targets": [
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "SwapSlots"
+                "name": "Zip"
             }
         },
         {
-            "id": "start-webapp-task",
+            "id": "json-patch-task",
             "type": "ms.vss-distributed-task.task",
-            "description": "Start an Azure Web App, or one of its slot",
+            "description": "Applies a json patch to a file",
             "targets": [
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "StartWebApp"
-            }
-        },
-        {
-            "id": "stop-webapp-task",
-            "type": "ms.vss-distributed-task.task",
-            "description": "Stop an Azure Web App, or one of its slot",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "StopWebApp"
+                "name": "JsonPatch"
             }
         }
     ]
