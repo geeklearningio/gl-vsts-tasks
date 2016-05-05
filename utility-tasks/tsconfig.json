@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "commonjs"
+    },
+    "files": [
+        "JsonPatch/jsonPatch.ts",
+        "Zip/zip.ts",
+        "typings/main.d.ts",
+        "typings/yazl.d.ts",
+        "typings/vsts-task-lib.d.ts"
+    ],
+    "exclude": [
+        "Zip/node_modules",
+        "node_modules",
+        "typings/browser",
+        "typings/browser.d.ts"
+    ]
+}

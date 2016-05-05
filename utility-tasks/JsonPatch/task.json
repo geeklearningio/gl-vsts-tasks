@@ -1,0 +1,66 @@
+{
+    "id": "DEEAA603-DA23-43AB-A099-33AEFE358520",
+    "name": "JsonPatch",
+    "friendlyName": "Json Patch",
+    "description": "Apply a Json Patch to a file",
+    "category": "Build and Release",
+    "visibility": [
+        "Build",
+        "Release"
+    ],
+    "author": "Geek Learning",
+    "version": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 35
+    },
+    "demands": [
+        "npm"
+    ],
+    "minimumAgentVersion": "1.95.0",
+    "instanceNameFormat": "Patches files $(JsonTarget)",
+    "inputs": [
+        {
+            "name": "JsonWorkingDir",
+            "type": "filePath",
+            "label": "Patch working directory",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Patch target file. Example: $(agent.builddirectory)/target.json"
+        },
+        {
+            "name": "JsonTargetFilters",
+            "type": "multiLine",
+            "label": "Target files",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Patch target file. Example: $(agent.builddirectory)/target.json"
+        },
+        {
+            "name": "JsonPatchContent",
+            "type": "multiLine",
+            "label": "Patch Content",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Patch content.",
+            "properties": {
+                "resizable": "true",
+                "rows" : "10",
+                "maxLength" : "1000"
+            }
+        },
+        {
+            "name": "CustomPatchSyntax",
+            "type": "boolean",
+            "label": "Custom Optional Patch Syntax",
+            "defaultValue": "false",
+            "helpMarkDown": "Allows you to mark patchs as option using ?prefix"
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "$(currentDirectory)\\jsonPatch.js",
+            "argumentFormat": ""
+        }
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "manifestVersion": 1,
+    "id": "gl-vsts-tasks-utility",
+    "name": "Utility Tasks",
+    "version": "0.0.35",
+    "publisher": "geeklearningio",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services.Cloud"
+        }
+    ],
+    "description": "Awesome additionnal utility tasks.",
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {
+        "default": "extension-icon.png"
+    },
+    "tags": [
+        "utility",
+        "zip",
+        "json"
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        },
+        "license": {
+            "path": "LICENSE.md"
+        }
+    },
+    "links": {
+        "home": {
+            "uri": "http://geeklearning.io/"
+        },
+        "getstarted": {
+            "uri": "http://geeklearning.io/"
+        },
+        "learn": {
+            "uri": "http://geeklearning.io/"
+        },
+        "support": {
+            "uri": "http://geeklearning.io/"
+        },
+        "repository": {
+            "uri": "https://github.com/geeklearningio/awesome-vsts-tasks"
+        },
+        "issues": {
+            "uri": "https://github.com/geeklearningio/awesome-vsts-tasks/issues"
+        }
+    },
+    "branding": {
+        "color": "#008B8B",
+        "theme": "light"
+    },
+    "files": [
+        {
+            "path": "Zip"
+        },
+        {
+            "path": "JsonPatch"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "zip-task",
+            "type": "ms.vss-distributed-task.task",
+            "description": "Zips files",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "Zip"
+            }
+        },
+        {
+            "id": "json-patch-task",
+            "type": "ms.vss-distributed-task.task",
+            "description": "Applies a json patch to a file",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "JsonPatch"
+            }
+        }
+    ]
+}
