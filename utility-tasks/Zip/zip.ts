@@ -7,7 +7,12 @@ import micromatch = require('micromatch');
 try {
 
     var zipRoot = tl.getPathInput("ZipRoot");
-    var patterns: any = tl.getInput("Contents").split("\n").map((pattern) => path.join(zipRoot, pattern));
+    var patterns: any = tl.getInput("Contents").split("\n").map((pattern) => {
+        if (pattern.match(/^!/)) {
+            return '!' + path.join(zipRoot, pattern.substr(1));
+        }
+        return path.join(zipRoot, pattern)
+    });
     var allFiles = tl.find(zipRoot).map(file => path.resolve(file));
     var zipPath = tl.getPathInput("TargetPath");
     var zipName = tl.getPathInput("ZipName");

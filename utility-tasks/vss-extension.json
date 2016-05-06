@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "gl-vsts-tasks-utility",
     "name": "Utility Tasks",
-    "version": "0.0.35",
+    "version": "0.0.40",
     "publisher": "geeklearningio",
     "targets": [
         {
@@ -59,6 +59,9 @@
         },
         {
             "path": "JsonPatch"
+        },
+        {
+            "path": "CopyExt"
         }
     ],
     "contributions": [
@@ -82,6 +85,17 @@
             ],
             "properties": {
                 "name": "JsonPatch"
+            }
+        },
+        {
+            "id": "copy-ext-task",
+            "type": "ms.vss-distributed-task.task",
+            "description": "Copy files with extended minimatch (micromatch) support",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "CopyExt"
             }
         }
     ]

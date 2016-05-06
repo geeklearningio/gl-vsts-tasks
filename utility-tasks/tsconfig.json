@@ -4,6 +4,7 @@
         "module": "commonjs"
     },
     "files": [
+        "CopyExt/copyExt.ts",
         "JsonPatch/jsonPatch.ts",
         "Zip/zip.ts",
         "typings/main.d.ts",
@@ -11,6 +12,7 @@
         "typings/vsts-task-lib.d.ts"
     ],
     "exclude": [
+        "CopyExt/node_modules",
         "Zip/node_modules",
         "node_modules",
         "typings/browser",
