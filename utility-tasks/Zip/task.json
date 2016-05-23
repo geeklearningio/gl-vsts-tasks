@@ -3,7 +3,7 @@
     "name": "Zip",
     "friendlyName": "Zip",
     "description": "Zips files from directories using minimatch filtering",
-    "category": "Build and Release",
+    "category": "Utility",
     "visibility": [
         "Build",
         "Release"
@@ -12,7 +12,7 @@
     "version": {
         "Major": 0,
         "Minor": 0,
-        "Patch": 37
+        "Patch": 38
     },
     "demands": [
         "npm"

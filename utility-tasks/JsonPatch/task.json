@@ -3,7 +3,7 @@
     "name": "JsonPatch",
     "friendlyName": "Json Patch",
     "description": "Apply a Json Patch to a file",
-    "category": "Build and Release",
+    "category": "Utility",
     "visibility": [
         "Build",
         "Release"
@@ -12,7 +12,7 @@
     "version": {
         "Major": 0,
         "Minor": 0,
-        "Patch": 36
+        "Patch": 38
     },
     "demands": [
         "npm"
@@ -46,7 +46,7 @@
             "properties": {
                 "resizable": "true",
                 "rows" : "10",
-                "maxLength" : "1000"
+                "maxLength" : "5000"
             }
         },
         {
