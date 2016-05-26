@@ -1,8 +1,8 @@
 {
-    "id": "DEEAA603-DA23-43AB-A099-33AEFE358520",
-    "name": "JsonPatch",
-    "friendlyName": "Json Patch",
-    "description": "Apply a Json Patch to a file",
+    "id": "ACEE093C-D84E-456E-B6F3-1D65969291BD",
+    "name": "XmlPatch",
+    "friendlyName": "Xml Patch",
+    "description": "Apply a Json Patch to an xml file",
     "category": "Utility",
     "visibility": [
         "Build",
@@ -12,7 +12,7 @@
     "version": {
         "Major": 0,
         "Minor": 0,
-        "Patch": 40
+        "Patch": 44
     },
     "demands": [
         "npm"
@@ -37,6 +37,19 @@
             "helpMarkDown": "Patch target file. Example: $(agent.builddirectory)/target.json"
         },
         {
+            "name": "Namespaces",
+            "type": "multiLine",
+            "label": "Xml Namespaces (As a Json map)",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Xml namespaces as a json map.",
+            "properties": {
+                "resizable": "true",
+                "rows" : "5",
+                "maxLength" : "5000"
+            }
+        },
+        {
             "name": "JsonPatchContent",
             "type": "multiLine",
             "label": "Patch Content",
@@ -48,18 +61,11 @@
                 "rows" : "10",
                 "maxLength" : "5000"
             }
-        },
-        {
-            "name": "CustomPatchSyntax",
-            "type": "boolean",
-            "label": "Custom Optional Patch Syntax",
-            "defaultValue": "false",
-            "helpMarkDown": "Allows you to mark patchs as option using ?prefix"
         }
     ],
     "execution": {
         "Node": {
-            "target": "jsonPatch.js",
+            "target": "xmlPatch.js",
             "argumentFormat": ""
         }
     }

@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "gl-vsts-tasks-utility",
     "name": "Utility Tasks",
-    "version": "0.0.43",
+    "version": "0.0.50",
     "publisher": "geeklearningio",
     "targets": [
         {
@@ -19,7 +19,9 @@
     "tags": [
         "utility",
         "zip",
-        "json"
+        "json",
+        "xml",
+        "patch"
     ],
     "content": {
         "details": {
@@ -62,6 +64,9 @@
         },
         {
             "path": "CopyExt"
+        },
+        {
+            "path": "XmlPatch"
         }
     ],
     "contributions": [
@@ -85,6 +90,17 @@
             ],
             "properties": {
                 "name": "JsonPatch"
+            }
+        },
+        {
+            "id": "xml-patch-task",
+            "type": "ms.vss-distributed-task.task",
+            "description": "Applies a json patch to an xml file",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "XmlPatch"
             }
         },
         {

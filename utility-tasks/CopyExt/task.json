@@ -12,12 +12,12 @@
     "version": {
         "Major": 0,
         "Minor": 0,
-        "Patch": 40
+        "Patch": 42
     },
     "demands": [
         "npm"
     ],
-    "minimumAgentVersion": "1.95.0",
+    "minimumAgentVersion": "1.91.0",
     "instanceNameFormat": "Copy files from $(SourceFolder)",
     "groups": [
         {
@@ -72,7 +72,7 @@
     ],
     "execution": {
         "Node": {
-            "target": "$(currentDirectory)\\copyExt.js",
+            "target": "copyExt.js",
             "argumentFormat": ""
         }
     }

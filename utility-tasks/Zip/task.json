@@ -12,12 +12,12 @@
     "version": {
         "Major": 0,
         "Minor": 0,
-        "Patch": 38
+        "Patch": 40
     },
     "demands": [
         "npm"
     ],
-    "minimumAgentVersion": "1.95.0",
+    "minimumAgentVersion": "1.91.0",
     "instanceNameFormat": "Zips files from directory $(ZipRoot)",
     "inputs": [
         {
@@ -55,7 +55,7 @@
     ],
     "execution": {
         "Node": {
-            "target": "$(currentDirectory)\\zip.js",
+            "target": "zip.js",
             "argumentFormat": ""
         }
     }
