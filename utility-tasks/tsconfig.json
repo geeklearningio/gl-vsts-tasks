@@ -5,6 +5,7 @@
     },
     "files": [
         "SemverToAndroidVersionCode/semvertoandroidversioncode.ts",
+        "LoadJsonVariables/loadjsonvariables.ts",
         "XmlPatch/xmlpatch.ts",
         "CopyExt/copyExt.ts",
         "JsonPatch/jsonPatch.ts",
@@ -14,6 +15,7 @@
         "vsts-task-lib.d.ts"
     ],
     "exclude": [
+        "LoadJsonVariables/node_modules",
         "XmlPatch/node_modules",
         "CopyExt/node_modules",
         "Zip/node_modules",

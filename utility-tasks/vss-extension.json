@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "gl-vsts-tasks-utility",
     "name": "Utility Tasks",
-    "version": "0.0.54",
+    "version": "0.0.59",
     "publisher": "geeklearningio",
     "targets": [
         {
@@ -66,6 +66,9 @@
             "path": "CopyExt"
         },
         {
+            "path": "LoadJsonVariables"
+        },
+        {
             "path": "XmlPatch"
         },
         {
@@ -115,6 +118,17 @@
             ],
             "properties": {
                 "name": "CopyExt"
+            }
+        },
+           {
+            "id": "load-json-variables-task",
+            "type": "ms.vss-distributed-task.task",
+            "description": "Load json files into build variables",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "LoadJsonVariables"
             }
         },
         {
