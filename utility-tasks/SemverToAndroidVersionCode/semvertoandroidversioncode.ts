@@ -11,7 +11,7 @@ try {
     var preReleaseTagMap = tl.getInput("PreReleaseTagMap");
     var preReleaseNumberBits = parseInt(tl.getInput("PreReleaseNumberBits"));
 
-    var varRegex = /\$\((.*)\)/g;
+    var varRegex = /\$\((.*?)\)/g;
     sourceSemVer = sourceSemVer.replace(varRegex, (match, varName, offset, string) => tl.getVariable(varName));
 
     console.log("SourceSemVer : " + sourceSemVer);

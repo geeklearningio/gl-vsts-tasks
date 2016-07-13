@@ -14,7 +14,7 @@ var allFiles = tl.find(targetPath).map(file => path.resolve(file));
 
 var files = allFiles.filter(micromatch.filter(patterns, { nodupes: true }));
 
-var varRegex = /\$\((.*)\)/g;
+var varRegex = /\$\((.*?)\)/g;
 var bomRegex = /^\uFEFF/;
 var optRegex = /^\?/;
 
