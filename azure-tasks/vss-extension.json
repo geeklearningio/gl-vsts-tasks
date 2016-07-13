@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "gl-vsts-tasks-azure",
     "name": "Geek Learning VSTS Tasks for Azure",
-    "version": "0.0.14",
+    "version": "0.0.17",
     "publisher": "geeklearningio",
     "targets": [
         {
@@ -68,11 +68,11 @@
             "path": "StopWebApp"
         },
         {
-            "path": "DotNetCorePublish"
+            "path": "PostReleaseToSlack"
         },
         {
-            "path": "PostReleaseToSlack"
-        }          
+            "path": "RestoreSqlDatabaseToSqlDatabase"
+        }         
     ],
     "contributions": [
         {
@@ -109,17 +109,6 @@
             }
         },
         {
-            "id": "dotnet-core-publish-task",
-            "type": "ms.vss-distributed-task.task",
-            "description": "Deploy an ASP.NET Core application to an Azure Web App",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "DotNetCorePublish"
-            }
-        },
-        {
             "id": "post-release-to-slack-task",
             "type": "ms.vss-distributed-task.task",
             "description": "Post the new release of an Azure Web App to Slack",
@@ -128,6 +117,17 @@
             ],
             "properties": {
                 "name": "PostReleaseToSlack"
+            }
+        },
+        {
+            "id": "restore-sql-database-to-sql-database-task",
+            "type": "ms.vss-distributed-task.task",
+            "description": "Restores an Azure SQL Database to another Azure SQL Database on the same server",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "RestoreSqlDatabaseToSqlDatabase"
             }
         }
     ]

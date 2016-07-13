@@ -6,5 +6,8 @@
     "vsts-task-sdk": "^0.6.2"
   },
   "devDependencies": {
+  },
+  "scripts": {
+    "package": "tfx extension create --manifest-globs vss-extension.json"
   }
 }
