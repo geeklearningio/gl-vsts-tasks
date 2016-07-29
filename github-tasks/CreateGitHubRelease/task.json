@@ -1,0 +1,76 @@
+{
+    "id": "88106D63-AD45-46A4-B970-955D1BA7C74D",
+    "name": "CreateGitHubRelease",
+    "friendlyName": "Create GitHub Release",
+    "description": "Creates a new GitHub Release",
+    "helpMarkDown": "[More Information](https://github.com/geeklearningio/gl-vsts-tasks)",
+    "category": "Utility",
+    "visibility": [
+        "Build",
+        "Release"
+    ],
+    "author": "Geek Learning",
+    "version": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 22
+    },
+    "demands": [
+        "npm"
+    ],
+    "minimumAgentVersion": "1.91.0",
+    "instanceNameFormat": "Create GitHub Release: $(tagName)",
+    "inputs": [
+        {
+            "name": "tagName",
+            "type": "string",
+            "label": "Tag version",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": ""
+        },
+        {
+            "name": "releaseName",
+            "type": "string",
+            "label": "Release title",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": ""
+        },
+        {
+            "name": "releaseBody",
+            "type": "multiLine",
+            "label": "Describe this release",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "[Markdown supported](https://guides.github.com/features/mastering-markdown/)"
+        },
+        {
+            "name": "prereleaseMode",
+            "type": "pickList",
+            "label": "Pre-release",
+            "defaultValue": "3",
+            "required": true,
+            "helpMarkDown": "We'll point out that this release is identified as non-production ready.",
+            "options": {
+                "3": "Detect from tag version semantic versionning",
+                "1": "This is a pre-release",
+                "2": "This is a production ready release"
+            }
+        },
+        {
+            "name": "draft",
+            "type": "boolean",
+            "label": "Draft",
+            "defaultValue": "false",
+            "required": true,
+            "helpMarkDown": "Check to create a draft (unpublished) release, uncheck to create a published one."
+        }
+    ], 
+    "execution": {
+        "Node": {
+            "target": "creategithubrelease.js",
+            "argumentFormat": ""
+        }
+    }
+}
