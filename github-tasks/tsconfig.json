@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "commonjs"
+    },
+    "files": [
+        "CreateGitHubRelease/creategithubrelease.ts",
+        "typings/index.d.ts",
+        "vsts-task-lib.d.ts"
+    ],
+    "exclude": [
+        "CreateGitHubRelease/node_modules",
+        "node_modules"
+    ]
+}

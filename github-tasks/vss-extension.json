@@ -1,0 +1,72 @@
+{
+    "manifestVersion": 1,
+    "id": "gl-vsts-tasks-github",
+    "name": "GitHub Tasks",
+    "version": "0.0.22",
+    "publisher": "geeklearningio",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services.Cloud"
+        }
+    ],
+    "description": "Awesome tasks for GitHub integration.",
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {
+        "default": "extension-icon.png"
+    },
+    "tags": [
+        "GitHub",
+        "Release"
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        },
+        "license": {
+            "path": "LICENSE.md"
+        }
+    },
+    "links": {
+        "home": {
+            "uri": "http://geeklearning.io/"
+        },
+        "getstarted": {
+            "uri": "http://geeklearning.io/"
+        },
+        "learn": {
+            "uri": "http://geeklearning.io/"
+        },
+        "support": {
+            "uri": "http://geeklearning.io/"
+        },
+        "repository": {
+            "uri": "https://github.com/geeklearningio/awesome-vsts-tasks"
+        },
+        "issues": {
+            "uri": "https://github.com/geeklearningio/awesome-vsts-tasks/issues"
+        }
+    },
+    "branding": {
+        "color": "#008B8B",
+        "theme": "light"
+    },
+    "files": [
+        {
+            "path": "CreateGitHubRelease"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "create-github-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "CreateGitHubRelease"
+            }
+        }
+    ]
+}
