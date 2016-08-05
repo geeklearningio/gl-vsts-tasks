@@ -12,14 +12,20 @@ Grown up extensions are now living on there own repositories :
 * [File tasks](https://github.com/geeklearningio/gl-vsts-tasks-files)
 * [Semver tasks](https://github.com/geeklearningio/gl-vsts-tasks-semver)
 
-## Install the extension to your account
+## Install the extensions to your account
 
-You can find the latest stable version of the VSTS Extension tasks on the
+You can find the latest stable version of the VSTS Extensions on the
 [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=publisher%3A%22Geek%20Learning%22&target=VSTS&sortBy=Relevance).
 
 ## Prerelease channel
 
 Our tasks are build and published in continuous (thanks to VSTS, of course). If you are interested or want to contribute, you can ask us the access of the private prerelease extension to install it to your account. By definition, this prerelease extension could introduce breaking changes, or could be very unstable, so it is not recommended to use it for your builds and releases, but only for testing purposes.
+
+## Build tools
+
+We built a few scripts that you might be interested in if you are writing extensions yourself. They allow you to write extensions more efficiently by eliminating some of the boilerplate and automating each step.
+
+[Build tools Repository](https://github.com/geeklearningio/gl-vsts-tasks-build-scripts)
 
 ## Attributions
 
