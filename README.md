@@ -1,6 +1,25 @@
-# gl-vsts-tasks
+# Geek Learning's Visual Studio Team Services Tasks And Extensions
 
-Coming soon !
+![Geek Learning Loves Visual Studio](https://raw.githubusercontent.com/geeklearningio/gl-vsts-tasks/master/Assets/GeekLearningLovesVisualStudio-medium.png)
+
+There is some love beetween [Geek Learning](http://geeklearning.io) and [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs). It gave birth to various Visual Studio Extensions. This repo was our nursery for those extensions. 
+
+Grown up extensions are now living on there own repositories :
+
+* [Azure tasks](https://github.com/geeklearningio/gl-vsts-tasks-azure)
+* [Patch tasks](https://github.com/geeklearningio/gl-vsts-tasks-file-patch)
+* [Variable tasks](https://github.com/geeklearningio/gl-vsts-tasks-variables)
+* [File tasks](https://github.com/geeklearningio/gl-vsts-tasks-files)
+* [Semver tasks](https://github.com/geeklearningio/gl-vsts-tasks-semver)
+
+## Install the extension to your account
+
+You can find the latest stable version of the VSTS Extension tasks on the
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=publisher%3A%22Geek%20Learning%22&target=VSTS&sortBy=Relevance).
+
+## Prerelease channel
+
+Our tasks are build and published in continuous (thanks to VSTS, of course). If you are interested or want to contribute, you can ask us the access of the private prerelease extension to install it to your account. By definition, this prerelease extension could introduce breaking changes, or could be very unstable, so it is not recommended to use it for your builds and releases, but only for testing purposes.
 
 ## Attributions
 
