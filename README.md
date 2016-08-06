@@ -12,6 +12,12 @@ Grown up extensions are now living on there own repositories :
 * [Files tasks](https://github.com/geeklearningio/gl-vsts-tasks-files)
 * [Semver tasks](https://github.com/geeklearningio/gl-vsts-tasks-semver)
 
+Under development (those ones are still turbulent children and you should expect nothing but the unexpected) :
+* [Handlebars tasks](https://github.com/geeklearningio/gl-vsts-tasks-handlebars)
+* Github tasks (coming soon, some stuff is in this repo)
+* Inception tasks (coming soon, those ones will be about enabling vsts to take control over himself)
+* Better slack integration (coming not so soon)
+
 ## Install the extensions to your account
 
 You can find the latest stable version of the VSTS Extensions on the
