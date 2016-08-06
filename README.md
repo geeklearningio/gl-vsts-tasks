@@ -8,8 +8,8 @@ Grown up extensions are now living on there own repositories :
 
 * [Azure tasks](https://github.com/geeklearningio/gl-vsts-tasks-azure)
 * [Patch tasks](https://github.com/geeklearningio/gl-vsts-tasks-file-patch)
-* [Variable tasks](https://github.com/geeklearningio/gl-vsts-tasks-variables)
-* [File tasks](https://github.com/geeklearningio/gl-vsts-tasks-files)
+* [Variables tasks](https://github.com/geeklearningio/gl-vsts-tasks-variables)
+* [Files tasks](https://github.com/geeklearningio/gl-vsts-tasks-files)
 * [Semver tasks](https://github.com/geeklearningio/gl-vsts-tasks-semver)
 
 ## Install the extensions to your account
